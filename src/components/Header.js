@@ -1,32 +1,23 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
-            <Toolbar>
-                <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-                >
-                <MenuIcon />
-                </IconButton>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                News
-                </Typography>
-                <Button color="inherit">Login</Button>
-            </Toolbar>
-            </AppBar>
-        </Box>
+        <Navbar bg="dark" variant="dark">
+                <Container>
+                <Navbar.Brand className='text-light' disabled>JI PARK</Navbar.Brand>
+                <Nav className="d-flex-row-reverse">
+                    <Link to='/'>
+                        <Nav.Link className='text-light' disabled>Home</Nav.Link>
+                    </Link>
+                    <Link to='/projects'>
+                        <Nav.Link className='text-light' disabled>Projects</Nav.Link>
+                    </Link>
+                    <Link to='/contact'>
+                        <Nav.Link className='text-light' disabled>Contact</Nav.Link>
+                    </Link>
+                </Nav>
+            </Container>
+        </Navbar>
     )
 }

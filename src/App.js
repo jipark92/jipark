@@ -1,12 +1,9 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import RouteSwitch from "./RouteSwitch";
 
 function App() {
   return (
     <div className="app">
-      <Header/>
-      Hello World
-      <Footer/>
+      <RouteSwitch/>
     </div>
   );
 }
