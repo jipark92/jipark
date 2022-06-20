@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import Home from "./components/Home"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import Experience from "./components/Experience"
 
 export default function RouteSwitch() {
     return (
@@ -12,6 +13,7 @@ export default function RouteSwitch() {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/projects' element={<Projects/>}/>
+                <Route path='experience' element={<Experience/>}/>
                 <Route path='/contact' element={<Contact/>}/>
             </Routes>
             <Footer/>
