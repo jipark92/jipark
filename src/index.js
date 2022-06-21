@@ -4,6 +4,8 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/header.css';
 import './css/home.css';
+import './css/aboutme.css';
+import './css/introduction.css';
 import './css/projects.css';
 import './css/experience.css';
 import './css/contact.css';

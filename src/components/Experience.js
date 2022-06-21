@@ -3,7 +3,7 @@ import { Accordion } from 'react-bootstrap';
 export default function Experience() {
     return (
         <section className="experience-box bg-dark text-light">
-            <h1>Experience</h1>
+            <h1 className='experience-header'>Experience</h1>
             <Accordion>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Accordion Item #1</Accordion.Header>

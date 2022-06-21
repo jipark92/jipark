@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return (
-        <section>
+        <section className="about-me-box">
             <h1>About Me</h1>
             <p>placeholder placeholder placeholder placeholder placeholder placeholder </p>
         </section>
