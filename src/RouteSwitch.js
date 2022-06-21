@@ -5,6 +5,7 @@ import Home from "./components/Home"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Experience from "./components/Experience"
+import Archive from "./components/Archive"
 
 export default function RouteSwitch() {
     return (
@@ -15,6 +16,7 @@ export default function RouteSwitch() {
                 <Route path='/projects' element={<Projects/>}/>
                 <Route path='experience' element={<Experience/>}/>
                 <Route path='/contact' element={<Contact/>}/>
+                <Route path='/archive' element={<Archive/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>

@@ -1,0 +1,27 @@
+.projects-box{
+    height: 100vh;
+    padding: 0 1rem 0 1rem;
+}
+
+.project-header{
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    /* color: greenyellow; */
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat( 2 , 1fr);
+    grid-template-rows: repeat( 3 , 1fr);
+    grid-gap: 1rem;
+}
+
+article{
+    border: 1px solid white;
+    height: 125px;
+}
+
+.archive-link{
+    color: greenyellow;
+    text-decoration: none;
+}
